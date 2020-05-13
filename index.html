@@ -8,17 +8,20 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="w-100 h-100">
     <h1 class="pl-4 pt-4">Markdown Editor</h1>
     <section class="w-100 h-75 container d-flex pl-3 pr-3">
-        <div class="w-50 h-100">
+        <div class="h-100">
             <h3>Output</h3>
             <div id="output" class="w-100 h-100 rounded p-2"></div>
         </div>
-        <div id="editor-wrap" class="w-50 h-100 pr-0 ml-2">
+        <div id="editor-wrap" class="h-100 pr-0 ml-2 position-relative">
             <h3>Editor</h3>
             <textarea id="editor" class="h-100 form-control"></textarea>
         </div>
