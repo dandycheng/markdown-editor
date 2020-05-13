@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="w-100 h-100">
+<head>
+    <title>Markdown editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="w-100 h-100">
+    <h1 class="pl-4 pt-4">Markdown Editor</h1>
+    <section class="w-100 h-75 d-flex pl-3 pr-3">
+        <div class="w-50 h-100">
+            <h3>Output</h3>
+            <div id="output" class="w-100 h-100 rounded"></div>
+        </div>
+        <div id="editor-wrap" class="w-50 h-100 pr-0 ml-2">
+            <h3>Editor</h3>
+            <textarea id="editor" class="h-100 form-control"></textarea>
+        </div>
+    </section>
+    <button id="export" class="form-control bg-primary container position-relative">Export as PDF</button>
+    <script src="script.js"></script>
+</body>
+</html>
