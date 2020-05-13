@@ -6,14 +6,11 @@ $('#editor').keyup(function () {
 })
 
 
-window.html2canvas = html2canvas
 let pdf = new jsPDF()
-let pdfOptions = {
-    filename:'test.pdf',
-    margin:10
-}
-
 
 $('#export').click(async function () {
-    html2pdf($('#output').html(),pdfOptions)
+    html2pdf($('#output').html(), {
+        filename: $('#filename').val() || 'markdown',
+        margin: 10
+    })
 })

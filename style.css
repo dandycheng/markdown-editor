@@ -8,6 +8,10 @@ h1, h3, button, #output {
     font-weight: 300;
 }
 
+#filename {
+    width: 25%;
+}
+
 button {
     font-weight: 400;
     color: #fff !important;
@@ -36,6 +40,11 @@ section>div {
 }
 
 @media screen and (max-width:1000px) {
+    #filename {
+        width: 100%;
+        margin-left: initial !important;
+        margin:0 2rem 0 2rem !important
+    }
     section {
         padding: 0 !important;
         flex-direction: column;
@@ -48,7 +57,7 @@ section>div {
         top: 3rem;
         margin-left: 0 !important;
     }
-    section > div {
+    section>div {
         width: 50%;
         max-height: 50%;
     }
