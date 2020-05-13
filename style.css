@@ -3,13 +3,14 @@
     padding: 0;
 }
 
-section {
-    justify-content: center;
-}
-
-h1, h3, #output {
+h1, h3, button, #output {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+button {
+    font-weight: 400;
+    color:#fff !important;
 }
 
 #editor {
@@ -23,6 +24,20 @@ h1, h3, #output {
     font-weight: 400 !important;
 }
 
-#export{
+#export {
     z-index: 2;
+    top: 4rem;
+    width: 15%;
+}
+
+@media screen and (max-width:940px) {
+    section {
+        flex-direction: column;
+    }
+    #editor-wrap {
+        margin-left: 0 !important;
+    }
+    #export {
+        width: 40%;
+    }
 }
